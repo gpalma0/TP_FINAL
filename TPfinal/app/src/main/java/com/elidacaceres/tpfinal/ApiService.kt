@@ -60,4 +60,9 @@ interface ApiService {
 
     @DELETE("/api/threads/{thread_id}")
     suspend fun deleteThread(@Path("thread_id") threadId: String): Response<Unit>
+
+
+    @GET("/auth/logout") // O @POST("/logout") si prefieres POST
+    suspend fun logout(): Response<Void>
+
 }
