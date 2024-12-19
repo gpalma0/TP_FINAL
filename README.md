@@ -25,5 +25,5 @@ A continuación, se detalla la distribución de tareas para el desarrollo del pr
    - Creación de la pantalla de **Inicio** tras el inicio de sesión, junto con la conexión hacia la funcionalidad de **Home Screen**.
 
 ### 6. **Iván Ramírez**
-   - Diseño y desarrollo de la pantalla principal del **Chat**.
+   - Diseño y desarrollo de la pantalla principal del **Chat** y **Historial de Chat**.
 
