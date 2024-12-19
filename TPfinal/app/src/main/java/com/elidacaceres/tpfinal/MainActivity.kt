@@ -1,10 +1,12 @@
 package com.elidacaceres.tpfinal
 
 import ChatScreen
+import HomeOptionsViewModel
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -42,7 +44,10 @@ class MainActivity : ComponentActivity() {
                     }
                     // Ruta para ChatOptionsScreen
                     composable("chat_options") {
+                        val viewModel: HomeOptionsViewModel = viewModel()
                         HomeOptions(
+                            viewModel = viewModel,
+                            onNavigateToWelcome = { navController.navigate("login") },
                             onNavigateToCurrentChat = { navController.navigate("chat_screen") },
                             onNavigateToPreviousChats = { navController.navigate("chat_history") }
                         )
