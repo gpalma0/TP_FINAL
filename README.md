@@ -27,4 +27,3 @@ A continuación, se detalla la distribución de tareas para el desarrollo del pr
 ### 6. **Iván Ramírez**
    - Diseño y desarrollo de la pantalla principal del **Chat**.
 
-¿
